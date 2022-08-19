@@ -20,6 +20,10 @@ h1, h2, h3 {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 
 img  {
   display: block;
@@ -267,8 +271,8 @@ time {
 .service__img {
   position: absolute;
   width: 282px;
-  top:75px;
-  left:-40px
+  top:100px;
+  left:-60px
 }
 
 
@@ -276,7 +280,7 @@ time {
   position: absolute;
   width: 326px;
 
-  right: -25px;
+  right: -50px;
   bottom: 70px;
 }
 
@@ -684,7 +688,7 @@ form {
 
 
 .contact-us-wrapper {
-   min-width: 1300px;
+   max-width: 1300px;
    position: absolute;
    
 }
@@ -989,7 +993,69 @@ content: none;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  letter-spacing: -0.03em
+  letter-spacing: -0.03em;
+}
+
+.faq-wrapper {
+  width: 100%;
+  height: fit-content;
+  background-color: #F2F2F2;
+}
+
+.accordion {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 128px 10px;
+}
+
+.accordion__item.active .accordion-content {
+  border: 1px solid #F2F2F2;
+  border-top: 0;
+  border-bottom: 12px;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border: 1px solid #F2F2F2;
+  background-color: white;
+}
+
+.accordion-header__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  margin-right: 20px;
+}
+
+
+.accordion-content__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+}
+
+
+
+.accordion__item.active .accordion-header__icon line:last-child{
+  display: none;
+}
+
+.accordion-content {
+  border: 1px solid transparent;
+  height: 0;
+  border-top: 0;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+}
+
+.accordion-content-spase {
+  padding:30px;
+  width: 80%;
 }
 
 

@@ -252,8 +252,10 @@
     margin-bottom: 15px;
 }
 
+
+
 .feedbacks-mobile {
-    padding: 100px 10px; 
+    padding: 100px 10px 0px 10px; 
 }
 
 .feedbacks__title {
@@ -265,6 +267,10 @@
 
 .feedbacks__item  {
     max-width: 1000px;
+}
+
+.accordion {
+    padding: 100px 10px;  
 }
 
 .footer-top {
@@ -353,7 +359,31 @@
     margin: 100px auto;
 }
 
+
+.expert {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
 }
+
+.expert-description {
+    margin-right: 0;
+}
+
+.expert-img {
+    width: 100%;
+}
+
+
+
+.customer-care {
+    display: none;
+}
+
+}
+
+
 
 
 
